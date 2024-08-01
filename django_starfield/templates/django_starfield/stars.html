@@ -2,7 +2,7 @@
 <div class="django-starfield" id="django-starfield-{{ widget.name }}">
  {% for i in stars %}
   <input type="radio" name="{{ widget.name }}" id="{{ widget.name }}-{{ forloop.counter0 }}"
-         value="{{ i }}" {% ifequal widget.value i|stringformat:'i' %}checked="checked"{% endifequal %} />
+         value="{{ i }}" {% if widget.value == i|stringformat:'i' %}checked="checked"{% endif %} />
   <label for="{{ widget.name }}-{{ forloop.counter0 }}"><span>{{ i }}</span></label>
  {% endfor %}
 </div>
