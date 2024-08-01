@@ -5,7 +5,7 @@ MYDIR = os.path.dirname(__file__)
 
 setup(
     name='django-starfield',
-    version='1.0.post2',
+    version='2.0.0',
     keywords = ['django', 'forms', 'widget', 'rating'],
     description = 'A no-frills Django form widget for rating stars',
     long_description = open(os.path.join(MYDIR, "README.rst"), "r", encoding="utf-8").read(),
@@ -14,7 +14,7 @@ setup(
     author_email='dominik.george@teckids.org',
     packages=['django_starfield'],
     include_package_data=True,
-    install_requires=['Django>=1.11'],
+    install_requires=['Django>=4.0'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
