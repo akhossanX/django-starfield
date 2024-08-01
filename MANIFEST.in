@@ -1,0 +1,4 @@
+include LICENCE
+recursive-include django_starfield/static *
+recursive-include django_starfield/templates *
+recursive-include example *.py *.html
